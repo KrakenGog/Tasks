@@ -11,19 +11,19 @@ int main()
     int b = 2;
 
     //1
-    //int c = a;
-    //a = b;
-    //b = c;
+    int c = a;
+    a = b;
+    b = c;
     ////2
-    /*a = a + b;
+    a = a + b;
     b = a - b;
-    a = a - b;*/
+    a = a - b;
     //3
     a = a - b;
     b = a + b;
-    a = a + b;
+    a = b - a;
 
-    cout << "a = " + to_string(a) << "b = " + to_string(b);
+    cout << "a = " + to_string(a) << " b = " + to_string(b);
 
     
 }
